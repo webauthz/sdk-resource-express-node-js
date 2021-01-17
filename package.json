@@ -1,0 +1,53 @@
+{
+  "name": "@webauthz/sdk-resource-express-node-js",
+  "version": "1.0.0",
+  "description": "Express middleware to authorize incoming requests via Webauthz tokens",
+  "main": "dist/main.umd.js",
+  "module": "src/main",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "clean": "exit 0",
+    "build": "rollup src/main.js --file dist/main.umd.js --format umd --name WebauthzExpress",
+    "lint": "eslint --fix src/**",
+    "deps": "exit 0",
+    "pkg": "exit 0",
+    "start": "exit 0",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webauthz/sdk-resource-express-node-js.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "cryptium",
+    "webauthz",
+    "express",
+    "middleware",
+    "sdk"
+  ],
+  "author": "Webauthz (https://webauthz.org)",
+  "contributors": [
+    "Jonathan Buhacoff <jonathan@cryptium.com> (https://github.com/jbuhacoff)"
+  ],
+  "bugs": {
+    "url": "https://github.com/webauthz/sdk-resource-express-node-js/issues"
+  },
+  "homepage": "https://github.com/webauthz/sdk-resource-express-node-js#readme",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@libertyio/commitlint-config": "^1.0.0",
+    "@libertyio/commitlint-config-type-enum": "^1.0.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.8",
+    "rollup": "^2.36.2"
+  }
+}
